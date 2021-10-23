@@ -1,5 +1,5 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+// Close buttons that are added to each list item
+var myNodelist = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -9,7 +9,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// close button for each list item this actually hides the content
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -58,13 +58,11 @@ function newElement() {
 
 
     
-    var list =document.getElementsByTagName('li');
-    var checkedList = document.getElementsByClassName("checked");
-    
+   
     
     
   
-    
+    /*Functions for hiding and showing completed list items*/
 
     function toggleMenu() {
         document.getElementsByClassName("checked")[0].classList.add("HideCompleted");
