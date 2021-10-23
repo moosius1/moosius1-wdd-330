@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="challenge1.css" />
+    <script defer src="challenge1.js"></script>
+    <title>WDD 330 Challenge 01c</title>
+    
+  </head>
+  <body>
+    <h1>Challenge 01 WDD 330</h1>
+    <h2>Ian Moes</h2>
+
+    <div id="ToDo" class="header">
+        <h2>Get it done</h2>
+        <input type="text" id="myInput" placeholder="I need to...">
+        <span onclick="newElement();closeListItem()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li class="unchecked">Do my homework</li>
+        <li class="unchecked">Finish my readings for WDD330</li>
+        <li class="unchecked">Go pickup groceries</li>
+        
+      </ul>
+      <span onclick="toggleMenu()" class="addBtn">Hide Completed</span>
+      <span onclick="toggleBack()" class="addBtn">Show Completed</span>
+    
+  </body>
+</html>
