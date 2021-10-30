@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Chapters 11, 12, and 13 for W07 readings
+</div>
+<div class="authors">
+For Ian Moes
+</div>
+
+<hr />
+
+
+<div class="sectionHeading">
+Further Functions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Function Properties and Methods >  Location 4657
+</div>
+<div class="noteText">
+The call() method can be used to set the value of this inside a function to an object that is provided as the first argument.
+</div>
+<div class="noteHeading">
+Note - Function Properties and Methods >  Location 4658
+</div>
+<div class="noteText">
+This can allow for more complex functions to be run and to use outside program objects.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Function Properties and Methods >  Location 4677
+</div>
+<div class="noteText">
+These are two powerful methods, as they allow generalized functions to be written that are not tied to specific objects by being methods of that object. This gives flexibility over how the functions can be used.
+</div>
+<div class="noteHeading">
+Note - Function Properties and Methods >  Location 4679
+</div>
+<div class="noteText">
+As I stated previously it allows them to be reused elsewhere
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Function Properties and Methods >  Location 4679
+</div>
+<div class="noteText">
+Custom Properties There is nothing to stop you adding your own properties to functions in the same way that you can add properties to any object in JavaScript. For example, you could add a description property to a function that describes what it does:
+</div>
+<div class="noteHeading">
+Note - Function Properties and Methods >  Location 4681
+</div>
+<div class="noteText">
+I feel like custom properties are great, but this example should be a comment where the function is first built
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Function Properties and Methods >  Location 4688
+</div>
+<div class="noteText">
+function square(x){ square.cache = square.cache || {}; if (!square.cache[x]) { square.cache[x] = x*x; } return square.cache[x] }
+</div>
+<div class="noteHeading">
+Note - Function Properties and Methods >  Location 4689
+</div>
+<div class="noteText">
+I'm interested to know how you would then use the cached result. It comes across as glossed over here but id love to see a function utilize that cache system
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Immediately Invoked Function Expressions >  Location 4693
+</div>
+<div class="noteText">
+An Immediately Invoked Function Expression – or IIFE – (pronounced 'iffy') is an anonymous function that, as the name suggests, is invoked as soon as it’s defined. 
+</div>
+<div class="noteHeading">
+Note - Immediately Invoked Function Expressions >  Location 4694
+</div>
+<div class="noteText">
+Pretty sure we have already used these multiple times this semester
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Immediately Invoked Function Expressions >  Location 4701
+</div>
+<div class="noteText">
+If a variable is only required temporarily, it may cause confusion if it’s still available later in the code. Even worse, the name of the variable may clash with another piece of code (an external JavaScript library, for example) resulting in errors. Placing any code that uses the temporary variable inside an IIFE will ensure it’s only available while the IIFE is invoked, then it will disappear. The example that follows uses an IIFE to swap the value of two global variables, a and b. This process requires the use of a temporary variable, called temp, which only exists while the IIFE is invoked:
+</div>
+<div class="noteHeading">
+Note - Immediately Invoked Function Expressions >  Location 4705
+</div>
+<div class="noteText">
+I didnt know that the variables only stayed active within the function this is great!
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_pink">pink</span>) - Immediately Invoked Function Expressions >  Location 4711
+</div>
+<div class="noteText">
+Initialization Code An IIFE can be used to set up any initialization code that there’ll be no need for again. Because the code is only run once, there’s no need to create any reusable, named functions, and all the variables will also be temporary. An IIFE will be invoked once, and can set up any variables, objects and event handlers when the page loads.
+</div>
+<div class="noteHeading">
+Note - Immediately Invoked Function Expressions >  Location 4714
+</div>
+<div class="noteText">
+I have never thought of this you're out utilization. Why keep code in the program if you only need it at the beginning
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_pink">pink</span>) - Functional Programming >  Location 5080
+</div>
+<div class="noteText">
+Functional programming has gained momentum in recent years, with a dedicated following. The popularity of purely functional languages, such as Clojure, Scala and Erlang, sparked an interest in functional programming techniques that continues to grow. JavaScript has always supported functional-style programming due to functions being first-class objects. The ability to pass functions as arguments, return them from other functions, and use anonymous functions and closures, are all fundamental elements of functional programming that JavaScript excels at.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_orange">orange</span>) - Chapter Summary >  Location 5260
+</div>
+<div class="noteText">
+Functions have built-in properties such as length, but can have custom properties added. All functions have call() and apply() methods that can invoke a function with the value of this bound to an object that is provided as an argument.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_orange">orange</span>) - Chapter Summary >  Location 5262
+</div>
+<div class="noteText">
+Immediately Invoked Function Expressions or IIFEs are functions that are enclosed in parentheses and immediately followed by double parentheses so they’re invoked. They are useful for namespacing variables and setting default values. Functions are able to dynamically redefine themselves in the body of the function, depending on certain conditions. A recursive function will keep invoking itself until a certain condition is met. A callback is a function that’s provided as an argument to another function. Callbacks are frequently used in asynchronous programming as part of the event loop. This means that a program can continue to run in a single thread while waiting for another task to be completed. Promises can be used instead of callbacks to deal with multiple asynchronous actions in sequence. They also provide a nicer mechanism for handling errors. Functions that return other functions are known as higher-order functions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_orange">orange</span>) - Chapter Summary >  Location 5269
+</div>
+<div class="noteText">
+A closure is the process of keeping a reference to a variable available outside the scope of the function it was originally defined in. A generator is created by placing an asterisk character (*) after the function keyword. A generator function will return an iterator object that provides a next() method, which returns the next value in a sequence that is defined in the generator function. Functional programming involves breaking processes down into steps that can be applied as a series of functions. Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the same result when given the same arguments (referential transparency). Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.
+</div>
+<div class="sectionHeading">
+Object-Oriented Programming in JavaScript
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Object-Oriented Programming >  Location 5287
+</div>
+<div class="noteText">
+There are three main concepts in OOP: encapsulation, polymorphism and inheritance
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Object-Oriented Programming >  Location 5294
+</div>
+<div class="noteText">
+In OOP, this involves keeping all the programming logic inside an object and making methods available to implement the functionality, without the outside world needing to know how it’s done.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Object-Oriented Programming >  Location 5298
+</div>
+<div class="noteText">
+In OOP, this means various objects can share the same method, but also have the ability to override shared methods with a more specific implementation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Object-Oriented Programming >  Location 5302
+</div>
+<div class="noteText">
+. In OOP, this means we can take an object that already exists and inherit all its properties and methods. We can then improve on its functionality by adding new properties and methods.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Constructor Functions >  Location 5375
+</div>
+<div class="noteText">
+The ES6 class declarations are preferable to the constructor function syntax because they are more succinct, easier to read and all code in a class definition is implicitly in strict mode, so doesn't need the 'use strict' statement.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Prototypal Inheritance >  Location 5442
+</div>
+<div class="noteText">
+The __proto__ property was formalized in ES6 because it was already implemented in most browsers, and many JavaScript libraries already used it. It is not considered part of the official specification, and it’s recommended that getPrototypeOf() is used instead.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - Prototypal Inheritance >  Location 5478
+</div>
+<div class="noteText">
+is possible to do this if constructor functions are used, and it can cause a lot of headaches if you accidentally redefine the prototype. This is because any instances that have already been created will retain the properties and methods of the old prototype, but will not receive any of the new properties and methods that are subsequently added to the redefined prototype. This is another reason why it’s recommended to use class declarations instead of constructor functions.
+</div>
+<div class="noteHeading">
+Note - Prototypal Inheritance >  Location 5482
+</div>
+<div class="noteText">
+This is great to be aware of so we aren't constantly making changes that aren't pushed through
+</div>
+<div class="sectionHeading">
+Ajax
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - The Fetch API >  Location 6156
+</div>
+<div class="noteText">
+It has since been superseded by the Fetch API, which is currently a living standard for requesting and sending data asynchronously across a network. The Fetch API uses promises to avoid callback hell, and also streamlines a number of concepts that had become cumbersome when using the XMLHttpRequest object.
+</div>
+<div class="noteHeading">
+Note - The Fetch API >  Location 6158
+</div>
+<div class="noteText">
+This is what i am now familiar with.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - The Fetch API >  Location 6207
+</div>
+<div class="noteText">
+JSON is probably the most common format for AJAX responses. The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object. Here is an example of how a JSON response promise would be resolved: fetch(url) .then( response => response.json() ); // transforms the JSON data into a JavaScript object .then( data => console.log(Object.entries(data)) ) .catch( error => console.log('There was an error: ', error)) Again, this is very similar to the earlier examples, except this response returns some JSON data that is then resolved as a JavaScript object. This means we can manipulate the object using JavaScript. In the example below, the Object.entries() method is used to view the key and value pairs in the returned object.
+</div>
+<div class="noteHeading">
+Note - The Fetch API >  Location 6215
+</div>
+<div class="noteText">
+This is most likely what we will be using in our projects
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - The Fetch API >  Location 6235
+</div>
+<div class="noteText">
+The five most commonly used verbs when dealing with resources on the web are:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_blue">blue</span>) - The Fetch API >  Location 6236
+</div>
+<div class="noteText">
+GET requests to retrieve resources POST requests, usually used to create a resource but can actually perform any task PUT requests to upsert, which means insert a resource or update it entirely PATCH requests to make partial updates to a resource DELETE requests to delete a resources. By default, a link in a web page will make a GET request. Forms are also submitted using a GET request by default, but they will often use a POST request. This excellent blog post by Rob Miller explains each of these verbs in more depth if you're interested in learning more about them.
+</div>
+<div class="noteHeading">
+Note - The Fetch API >  Location 6241
+</div>
+<div class="noteText">
+Luckily i have used the majority of these methods before
+</div>
+
+        </div>
+    </body>
+</html>
