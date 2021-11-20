@@ -1,0 +1,119 @@
+.curtain {
+    width: 100%; /* Ensures the component is the full screen width */
+    height: 100vh; /* We're using this for demo purposes */
+    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
+  }
+    
+  .curtain__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+        
+  .curtain__panel {
+    background: #8F832A;
+    width: 50%; /* Each panel takes up half the container */
+    height: 100vh; /* Used for demo purposes */
+    float: left; /* Makes sure panels are side-by-side */
+    position: relative; /* Needed to define the z-index */
+    z-index: 2; /* Places the panels in front of the prize */
+    transition: all 1s ease-out; /* Animates the sliding transition */
+  }
+  
+  .curtain__panel--left {
+    /* Styles for sliding the left panel */
+  }
+  
+  .curtain__panel--right {
+    /* Styles for sliding the right panel */
+  }
+    
+  .curtain__prize {
+    background: #333;
+    position: absolute; /* Forces the prize position into the container start */
+    z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
+    width: 100%;
+    height: 100%;
+  }
+
+  input[type=checkbox] {
+    position: absolute; /* Force the checkbox at the start of the container */
+    cursor: pointer; /* Indicate the curtain is clickable */
+    width: 100%; /* The checkbox is as wide as the component */
+    height: 100%; /* The checkbox is as tall as the component */
+    z-index: 100; /* Make sure the checkbox is on top of everything else */
+    opacity: 0; /* Hide the checkbox */
+  }
+
+
+  .curtain__wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+
+  /* When the checkbox is checked... */
+        
+/* Slide the first panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--1 {
+    transform: translateY(0);
+  }
+          
+  /* Slide the second panel in */
+  input[type=checkbox]:checked ~ div.curtain__panel--2 {
+    transform: translateY(0);
+  }
+
+  input[type=checkbox]:checked ~ div.curtain__panel--3 {
+    transform: translateY(0);
+  }
+
+  input[type=checkbox]:checked ~ div.curtain__panel--4 {
+    transform: translateY(0);
+  }
+
+  input[type=checkbox]:checked ~ div.curtain__panel--5 {
+    transform: translateY(0);
+  }
+
+
+  /* Slide the panel to the left out of the container */
+.curtain__panel--1 {
+    transform: translateY(-100%);
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .curtain__panel--2{
+      transform:rotateZ(360deg);
+      transform: translateY(100%);
+      grid-column: 3;
+      width: 100%;
+  }
+  
+  /* Slide the panel to the right out of the container */
+  .curtain__panel--3 {
+    transform: translateY(-100%);
+    grid-column: 5;
+    width: 100%;
+  }
+
+  .curtain__panel--4 {
+    transform: translateY(100%);
+    grid-column: 7;
+    width: 100%;
+  }
+
+  .curtain__panel--5 {
+    transform: translateY(-100%);
+    grid-column: 9;
+    width: 100%;
+  }
+
+  body{
+      display: grid;
+      overflow: hidden; 
+  }
+
+  img{
+      width: 100%;
+      
+  }
