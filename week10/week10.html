@@ -23,6 +23,25 @@
     </ul>  
     
       </div>
+
+      <script>
+        
+    function toggleMenu() {
+        document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
+       
+     document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
+      
+    document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
+      
+    document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
+      
+    document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
+      
+    
+    
+    
+    }
+      </script>
     <div class="menu-icon" onclick="toggleMenu()">
     
       
@@ -43,12 +62,18 @@
     <h3>Dad jokes app V0.1</h3>
 
     <span id="setup"></span>
-    <br>
-    <br>
+   
     <span id="punchline"></span>
-    <br>
-    <br>
+   
     <span id="singleLine"></span>
-    
+  <div class="saveJoke">
+  <h4>Like this joke? </h4>
+  <button>Save to my jokes </button>
+
+<br>
+
+    <div class="submitJoke">
+  <input placeholder="Submit your own Joke"></input>
+</div>
   </body>
 </html>

@@ -1,23 +1,4 @@
-
-    function toggleMenu() {
-        document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
-       
-     document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
-      
-    document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
-      
-    document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
-      
-    document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
-      
-    
-    
-    
-    }
-
-
-
-fetch("https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw%2Cracist", {
+/* fetch("https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw%2Cracist", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "jokeapi-v2.p.rapidapi.com",
@@ -55,5 +36,5 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode", {
     
     })
 
-
+ */
     
