@@ -15,11 +15,10 @@
     <div class="menu">
   
       <ul>
-        <a href="https://www.youtube.com/watch?v=iNm9qu3BoCI"><li>Zero Mission</li></a>
-      <a href="https://youtu.be/NWX_pOXN2dc?t=7"><li>Samus Returns</li></a>
-      <a href="https://youtu.be/rioXVG4lWHA"><li>Super </li></a>
-      <a href="https://www.youtube.com/watch?v=zQoUinkkci0"><li>Fusion</li></a>
-        <a href="https://www.youtube.com/watch?v=vidYVY3Lj3A"><li>Dread</li></a>
+        <a href="https://www.youtube.com/watch?v=iNm9qu3BoCI"><li>Saved Jokes</li></a>
+      <a href="https://youtu.be/NWX_pOXN2dc?t=7"><li>My Submitted Jokes</li></a>
+      <a href="https://youtu.be/rioXVG4lWHA"><li>About </li></a>
+     
     </ul>  
     
       </div>
@@ -53,27 +52,33 @@
     
             
       </div>
-    <br>
-    <br>
-    <br>
-    <h1>W10 notes in practice fetch API</h1>
-    <h2>Ian Moes</h2>
+  
 
-    <h3>Dad jokes app V0.1</h3>
-
-    <span id="setup"></span>
-   
-    <span id="punchline"></span>
+    <h1>Dad jokes app V0.2</h1>
+      <div class="jokeText">
+    <span id="setup">Why did the chicken cross the road?</span>
+   <br>
+    <span id="punchline">To get to the other side</span>
    
     <span id="singleLine"></span>
+  </div>
   <div class="saveJoke">
   <h4>Like this joke? </h4>
   <button>Save to my jokes </button>
-
+  <button onClick="window.location.reload();">Random Joke</button>
+</div>
 <br>
 
     <div class="submitJoke">
-  <input placeholder="Submit your own Joke"></input>
+      <h4>Have your own joke?</h4>
+      <form action="">
+        <label for="name"> </label>
+        <input type="text" id="fname" name="fname" placeholder="Please enter your name"><br><br>
+        <label for="Joke"></label>
+        <textarea id="joke" name="jokeInput" rows="4" cols="40">Why did the Chicken cross the road?
+          </textarea>
+        <input type="submit" value="Submit">
+      </form> 
 </div>
   </body>
 </html>

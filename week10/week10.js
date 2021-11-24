@@ -1,4 +1,4 @@
-/* fetch("https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw%2Cracist", {
+  fetch("https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw%2Cracist", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "jokeapi-v2.p.rapidapi.com",
@@ -36,5 +36,5 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode", {
     
     })
 
- */
-    
+ 
+     
