@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+html{
+  display:grid;
+  background-color:#FAFAFA;
+}
+
+a:link{
+  text-decoration:none;
+  color:#FAFAFA;
+}
+
+li:hover{
+  color:#A80000;
+}
+
+a:visited{
+  color:#FAFAFA;
+  
+}
+
+
+
+.menu-icon{
+  height:45px;
+  width:45px;
+  
+  padding:5px;
+  display:flex;
+  flex-direction:column;
+  
+  transition: all 1s ease-out;
+  
+  cursor:pointer;
+  align-items:center;
+  float:left;
+}
+
+.menuLine{
+  height:25%;
+  width:90%;
+  background-color:#A80000;
+  margin:5px;
+  border-radius:5px;
+ 
+}
+
+.menu-icon:hover{
+  background-color:#7E8886;
+}
+
+
+
+.pop-out{
+   transform: translateX(350px);
+  transition: all 1s ease-out;
+  
+
+}
+
+.pop-out-icon{
+  transform: translateX(290px);
+  transition: all 1s ease-out;
+}
+
+.menu{
+  position:absolute;
+  left:-350px;
+  background-color:#D16800;
+  transition: all 1s ease-out;
+  width:300px;
+  height: 100%; 
+  float:left;
+  z-index:9;
+  
+}
+
+ul{
+  list-style:none;
+  margin-top:80px;
+}
+
+li{
+  padding:10px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size:16pt;
+  transition: all .5s ease-out;
+}
+
+.line2{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  
+  
+}
+
+.fade-away{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s ease-out;
+  
+ 
+  
+}
+
+.line1{
+  transition: all 1s ease-out;
+}
+
+
+
+.line3{
+  transition: all 1s ease-out;
+}
+
+.rotate-down{
+  transform:rotate(405deg) translateY(300%) translateX(30%); 
+  
+ 
+  transition: all 1s ease-out;
+}
+
+.rotate-up{
+  transform:rotate(-405deg) translateY(-170%)
+translateX(15%); 
+  
+ 
+  transition: all 1s ease-out;
+}
+
+img{
+  width:15%;
+}
