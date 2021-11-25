@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="week10.css" />
+    <link rel="stylesheet" href="button.css" />
     <script src="week10.js" type="module">
      
     </script>
@@ -64,8 +65,9 @@
   </div>
   <div class="saveJoke">
   <h4>Like this joke? </h4>
-  <button>Save to my jokes </button>
-  <button onClick="window.location.reload();">Random Joke</button>
+  <button class="bubbly-button">Save to my Jokes</button>
+  <button class="bubbly-button" onClick="window.location.reload();">New Random Joke</button>
+  
 </div>
 <br>
 
@@ -75,9 +77,9 @@
         <label for="name"> </label>
         <input type="text" id="fname" name="fname" placeholder="Please enter your name"><br><br>
         <label for="Joke"></label>
-        <textarea id="joke" name="jokeInput" rows="4" cols="40">Why did the Chicken cross the road?
-          </textarea>
-        <input type="submit" value="Submit">
+        <textarea id="joke" name="jokeInput" rows="4" cols="40" placeholder="Why did the chicken cross the road?"></textarea>
+        
+        <button class="bubbly-button" type="submit" value="Submit">Submit Joke</button>
       </form> 
 </div>
   </body>
