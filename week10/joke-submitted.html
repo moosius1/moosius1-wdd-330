@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="week10.css" />
+    <link rel="stylesheet" href="button.css" />
+    <script src="week10.js" type="module">
+     
+    </script>
+    <title>Ian Moes New HTML Doc</title>
+    
+  </head>
+  <body>
+
+    <div class="menu">
+  
+      <ul>
+        <a href="/week10/week10.html"><li>Home</li></a>
+        <a href="savedjokes.html"><li>Saved Jokes</li></a>
+      
+      <a href="/week10/about.html"><li>About </li></a>
+     
+    </ul>  
+    
+      </div>
+
+      
+      
+
+   
+    <div class="menu-icon" onclick="toggleMenu()">
+    
+      
+      <div class="menuLine line1 "></div>
+      <div class="menuLine line2"></div>
+      <div class="menuLine line3"></div>
+      
+      
+    
+            
+      </div>
+  
+      <img class="logo" src="/epitome_1_0_0/images/ian_arthur_moes_designs_logo_white-02.svg" alt="Homepage">
+  
+
+    <h1>Dad jokes app V1.0</h1>
+      <div class="jokeText">
+    <span id="">Thank you for submitting your joke, please check your email to see if it has been approved.</span>
+    
+    
+  </div>
+  
+<br>
+
+
+<script> 
+    function toggleMenu() {
+    document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
+ 
+    document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
+
+    document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
+
+    document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
+
+    document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
+
+    }
+
+
+
+</script>
+
+    
+  </body>
+</html>

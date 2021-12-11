@@ -19,6 +19,34 @@ h1{
     font-family: 'Montserrat', sans-serif;
 }
 
+.savedJokeText{
+  font-size: 16pt;
+}
+
+#savedJokeText{
+  text-align: left;
+  
+}
+
+span{
+  font-size: 16pt;
+}
+
+#savedJokeText li{
+  margin-top: 30px;
+  margin-left: -2em;
+  border-top: 5px solid #D16800;
+}
+
+#savedJokeText{
+  margin-top:-25px;
+}
+
+.clearSave{
+  
+}
+
+
 .jokeText{
     font-family: 'Shrikhand', cursive;
     text-align: center;
@@ -28,6 +56,7 @@ h1{
 
     
 }
+
 
 .saveJoke{
     border:5px solid #D16800;
@@ -50,8 +79,12 @@ input, textarea, button{
 }
 
 a:link{
-  text-decoration:none;
+  text-decoration:underline;
   color:#FAFAFA;
+}
+
+a:hover{
+  color:#A80000;
 }
 
 li:hover{
@@ -195,8 +228,14 @@ translateX(15%);
   transition: all 1s ease-out;
 }
 
-img{
-  width:15%;
+
+
+.logo{
+  position: absolute;
+  top:0px;
+  right:10px;
+  width:80px;
+  margin-left: 70px;
 }
 
 
@@ -219,7 +258,7 @@ body h1{
   grid-column;2;
   grid-row:4;
   max-width: 500px;
-  margin-right:-170px;
+  margin-right: -170px;
 }
 
 .saveJoke{
@@ -283,7 +322,7 @@ form input{
 }
 
 
-
 }
+
 
 

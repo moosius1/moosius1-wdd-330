@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="week10.css" />
+    <link rel="stylesheet" href="button.css" />
+    <script src="week10.js" type="module">
+     
+    </script>
+    <title>Ian Moes New HTML Doc</title>
+    
+  </head>
+  <body>
+
+    <div class="menu">
+  
+        <ul>
+            <a href="/week10/week10.html"><li>Home</li></a>
+            <a href="savedjokes.html"><li>Saved Jokes</li></a>
+          
+          <a href="/week10/about.html"><li>About </li></a>
+         
+        </ul>  
+    
+      </div>
+
+      
+      
+
+   
+    <div class="menu-icon" onclick="toggleMenu()">
+    
+      
+      <div class="menuLine line1 "></div>
+      <div class="menuLine line2"></div>
+      <div class="menuLine line3"></div>
+      
+      
+    
+            
+      </div>
+  
+      <img class="logo" src="/epitome_1_0_0/images/ian_arthur_moes_designs_logo_white-02.svg" alt="Homepage">
+  
+
+    <h1>Dad jokes app V1.0</h1>
+      <div class="jokeText">
+    <span id="">Your Favorite Jokes:</span>
+    <button id="save" class="bubbly-button clearSave" onClick="localStorage.clear(),window.location.reload()">Clear Saved Jokes</button>
+    <ul id="savedJokeText">
+        <li id="favJoke1">Why did the chicken cross the road<br></li>
+        <span id="punch1">To get to the other side</span>
+        <li id="favJoke2"><br></li>
+        <span id="punch2"></span>
+        <li id="favJoke3"><br></li>
+        <span id="punch3"></span>
+        <li id="favJoke4"><br></li>
+        <span id="punch4"></span>
+        <li id="favJoke5"><br></li>
+        <span id="punch5"></span>
+        <li id="favJoke6"><br></li>
+        <span id="punch6"></span>
+        <li id="favJoke7"><br></li>
+        <span id="punch7"></span>
+        <li id="favJoke8"><br></li>
+        <span id="punch8"></span>
+        <li id="favJoke9"><br></li>
+        <span id="punch9"></span>
+        <li id="favJoke10"><br></li>
+        <span id="punch10"></span>
+    
+    </ul>
+    <br>
+    
+   <br>
+    
+   
+    
+  </div>
+  
+<br>
+
+
+<script> 
+    function toggleMenu() {
+    document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
+ 
+    document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
+
+    document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
+
+    document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
+
+    document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
+
+    }
+
+console.log(localStorage[1]);
+document.getElementById("favJoke1").textContent=localStorage[0];
+document.getElementById("punch1").textContent=localStorage[1];
+
+document.getElementById("favJoke2").textContent=localStorage[2];
+document.getElementById("punch2").textContent=localStorage[3];
+
+document.getElementById("favJoke3").textContent=localStorage[4];
+document.getElementById("punch3").textContent=localStorage[5];
+
+document.getElementById("favJoke4").textContent=localStorage[6];
+document.getElementById("punch4").textContent=localStorage[7];
+
+document.getElementById("favJoke5").textContent=localStorage[8];
+document.getElementById("punch5").textContent=localStorage[9];
+
+document.getElementById("favJoke6").textContent=localStorage[10];
+document.getElementById("punch6").textContent=localStorage[11];
+
+document.getElementById("favJoke7").textContent=localStorage[12];
+document.getElementById("punch7").textContent=localStorage[13];
+
+document.getElementById("favJoke8").textContent=localStorage[14];
+document.getElementById("punch8").textContent=localStorage[15];
+
+document.getElementById("favJoke9").textContent=localStorage[16];
+document.getElementById("punch9").textContent=localStorage[17];
+
+document.getElementById("favJoke10").textContent=localStorage[18];
+document.getElementById("punch10").textContent=localStorage[19];
+
+function clear(){
+        localStorage.clear;
+      }
+
+</script>
+
+    
+  </body>
+</html>

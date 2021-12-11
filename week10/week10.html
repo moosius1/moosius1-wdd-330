@@ -16,46 +16,101 @@
     <div class="menu">
   
       <ul>
-        <a href="https://www.youtube.com/watch?v=iNm9qu3BoCI"><li>Saved Jokes</li></a>
-      <a href="https://youtu.be/NWX_pOXN2dc?t=7"><li>My Submitted Jokes</li></a>
-      <a href="https://youtu.be/rioXVG4lWHA"><li>About </li></a>
+        <a href="/week10/week10.html"><li>Home</li></a>
+        <a href="savedjokes.html"><li>Saved Jokes</li></a>
+      
+      <a href="/week10/about.html"><li>About </li></a>
      
-    </ul>  
+    </ul>   
     
       </div>
 
       <script>
+        fetch("https://v2.jokeapi.dev/joke/Any?safe-mode", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "dad-jokes.p.rapidapi.com",
+		"x-rapidapi-key": "198d2ae886mshda0c71e675676f0p1e0877jsn724c64a80630"
+	}
+})
+    .then((response) => response.json())
+    .then((jsObject) =>{
+        console.log(jsObject);
+    const singleLine = jsObject['joke'];
+    const setup = jsObject['setup'];
+    console.log(setup);
+    const punchline = jsObject['delivery'];
+    console.log(punchline);
+    console.log(singleLine);
+    
+    document.getElementById('setup').textContent = setup;
+    document.getElementById('punchline').textContent = punchline;
+    document.getElementById('singleLine').textContent = singleLine;
+
+    // Put the object into storage
+
+
+    
+    })
+
+    function save(){
+      const setup = document.getElementById('setup').textContent;
+      localStorage.setItem(localStorage.length, setup);
+      const punchline = document.getElementById('punchline').textContent;
+      localStorage.setItem(localStorage.length, punchline);
+      const singleLine = document.getElementById('singleLine').textContent;
+      localStorage.setItem(localStorage.length, singleLine);
+
+      
+      
+      // Retrieve the object from storage
+      var retrievedObject = localStorage.getItem('setup');
+      var retrievedObject2 =localStorage.getItem('punchline');
+      
+      console.log(localStorage[0]);
+      console.log(retrievedObject2);
+      }
+
+     
         
-    function toggleMenu() {
-        document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
-       
-     document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
-      
-    document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
-      
-    document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
-      
-    document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
-      
+        
+   
     
+
     
-    
-    }
       </script>
     <div class="menu-icon" onclick="toggleMenu()">
+    <script> function toggleMenu() {
+      document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
+     
+   document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
     
+  document.getElementsByClassName("line2")[0].classList.toggle("fade-away");
+    
+  document.getElementsByClassName("line1")[0].classList.toggle("rotate-down");
+    
+  document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
+
+  
+    
+  
+  
+  
+  }</script>
       
       <div class="menuLine line1 "></div>
       <div class="menuLine line2"></div>
       <div class="menuLine line3"></div>
       
-      
-    
+     
+     
             
       </div>
+
+      <img class="logo" src="/epitome_1_0_0/images/ian_arthur_moes_designs_logo_white-02.svg" alt="Homepage">
   
 
-    <h1>Dad jokes app V0.3</h1>
+    <h1>Dad jokes app V1.0</h1>
       <div class="jokeText">
     <span id="setup">Why did the chicken cross the road?</span>
    <br>
@@ -65,7 +120,7 @@
   </div>
   <div class="saveJoke">
   <h4>Like this joke? </h4>
-  <button class="bubbly-button">Save to my Jokes</button>
+  <button id="save" class="bubbly-button" onClick="save()">Save to my Jokes</button>
   <button class="bubbly-button" onClick="window.location.reload();">New Random Joke</button>
   
 </div>
@@ -73,7 +128,7 @@
 
     <div class="submitJoke">
       <h4>Have your own joke?</h4>
-      <form action="">
+      <form action="/week10/joke-submitted.html">
         <label for="name"> </label>
         <input type="text" id="fname" name="fname" placeholder="Please enter your name"><br><br>
         <label for="Joke"></label>
