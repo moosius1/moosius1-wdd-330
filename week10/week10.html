@@ -13,17 +13,16 @@
   </head>
   <body>
 
-    <div class="menu">
+  <div class="menu">
   
       <ul>
         <a href="https://moosius1.github.io/moosius1-wdd-330/week10/week10.html"><li>Home</li></a>
         <a href="https://moosius1.github.io/moosius1-wdd-330/week10/savedjokes.html"><li>Saved Jokes</li></a>
-      
-      <a href="https://moosius1.github.io/moosius1-wdd-330/week10/about.html"><li>About </li></a>
+        <a href="https://moosius1.github.io/moosius1-wdd-330/week10/about.html"><li>About </li></a>
      
     </ul>   
     
-      </div>
+  </div>
 
       <script>
         fetch("https://v2.jokeapi.dev/joke/Any?safe-mode", {
@@ -47,13 +46,10 @@
     document.getElementById('punchline').textContent = punchline;
     document.getElementById('singleLine').textContent = singleLine;
 
-    // Put the object into storage
-
-
-    
     })
 
     function save(){
+       // Put the object into storage
       const setup = document.getElementById('setup').textContent;
       localStorage.setItem(localStorage.length, setup);
       const punchline = document.getElementById('punchline').textContent;
@@ -61,26 +57,9 @@
       const singleLine = document.getElementById('singleLine').textContent;
       localStorage.setItem(localStorage.length, singleLine);
 
-      
-      
-      // Retrieve the object from storage
-      var retrievedObject = localStorage.getItem('setup');
-      var retrievedObject2 =localStorage.getItem('punchline');
-      
-      console.log(localStorage[0]);
-      console.log(retrievedObject2);
       }
 
-     
-        
-        
-   
-    
-
-    
-      </script>
-    <div class="menu-icon" onclick="toggleMenu()">
-    <script> function toggleMenu() {
+      function toggleMenu() {
       document.getElementsByClassName("menu")[0].classList.toggle("pop-out");
      
    document.getElementsByClassName("menu-icon")[0].classList.toggle("pop-out-icon");
@@ -91,30 +70,24 @@
     
   document.getElementsByClassName("line3")[0].classList.toggle("rotate-up");
 
-  
+  }
+     
     
-  
-  
-  
-  }</script>
-      
+      </script>
+    <div class="menu-icon" onclick="toggleMenu()">
       <div class="menuLine line1 "></div>
       <div class="menuLine line2"></div>
       <div class="menuLine line3"></div>
-      
-     
-     
-            
-      </div>
+    </div>
 
       <img class="logo" src="https://moosius1.github.io/moosius1-wdd-330/week10/ian_arthur_moes_designs_logo_white-02.svg" alt="Homepage">
   
 
     <h1>Dad jokes app V1.0</h1>
       <div class="jokeText">
-    <span id="setup">Why did the chicken cross the road?</span>
+    <span id="setup"></span>
    <br>
-    <span id="punchline">To get to the other side</span>
+    <span id="punchline"></span>
    
     <span id="singleLine"></span>
   </div>
@@ -128,7 +101,7 @@
 
     <div class="submitJoke">
       <h4>Have your own joke?</h4>
-      <form action="/week10/joke-submitted.html">
+      <form action="https://moosius1.github.io/moosius1-wdd-330/week10/joke-submitted.html">
         <label for="name"> </label>
         <input type="text" id="fname" name="fname" placeholder="Please enter your name"><br><br>
         <label for="Joke"></label>
