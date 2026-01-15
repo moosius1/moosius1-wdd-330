@@ -1925,6 +1925,7 @@ input::-moz-focus-inner {
 
 .intro-pic {
   background-color: #02182c;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../images/PXL_20251231_000712224.jpg);
